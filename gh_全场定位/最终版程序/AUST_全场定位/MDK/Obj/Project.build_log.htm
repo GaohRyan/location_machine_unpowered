@@ -1,0 +1,204 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¶ÃVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: hang gao, aust, LIC=X9630-BARVB-4SPY4-F5CMQ-TF58A-QSIDP
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.14.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      Segger\JL2CM3.dll V2.99.13.0
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+C:\Users\Lenovo\Desktop\AUST_»´≥°∂®Œª\gh_»´≥°∂®Œª\◊Ó÷’∞Ê≥Ã–Ú\AUST_»´≥°∂®Œª\MDK\Project.uvprojx
+Project File Date:  05/19/2018
+
+<h2>Output:</h2>
+Rebuild target 'Project'
+compiling Main.c...
+..\Source\APP\Main.c(284): warning:  #177-D: variable "str" was declared but never referenced
+        char str[100];
+..\Source\APP\Main.c(285): warning:  #177-D: variable "len" was declared but never referenced
+        unsigned char len,i;
+..\Source\APP\Main.c(285): warning:  #177-D: variable "i" was declared but never referenced
+        unsigned char len,i;
+..\Source\APP\Main.c: 3 warnings, 0 errors
+compiling encode.c...
+..\Source\APP\encode.c(5): error:  #20: identifier "GPIO_InitTypeDef" is undefined
+        GPIO_InitTypeDef GPIO_InitStructure;
+..\Source\APP\encode.c(6): error:  #20: identifier "TIM_TimeBaseInitTypeDef" is undefined
+        TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
+..\Source\APP\encode.c(7): error:  #20: identifier "TIM_ICInitTypeDef" is undefined
+        TIM_ICInitTypeDef TIM_ICInitStructure;          
+..\Source\APP\encode.c(9): warning:  #223-D: function "RCC_APB1PeriphClockCmd" declared implicitly
+        RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
+..\Source\APP\encode.c(9): error:  #20: identifier "RCC_APB1Periph_TIM4" is undefined
+        RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
+..\Source\APP\encode.c(10): warning:  #223-D: function "RCC_APB2PeriphClockCmd" declared implicitly
+        RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
+..\Source\APP\encode.c(10): error:  #20: identifier "RCC_APB2Periph_GPIOB" is undefined
+        RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
+..\Source\APP\encode.c(13): error:  #20: identifier "GPIO_Pin_6" is undefined
+        GPIO_InitStructure.GPIO_Pin = GPIO_Pin_6 | GPIO_Pin_7;         
+..\Source\APP\encode.c(13): error:  #20: identifier "GPIO_Pin_7" is undefined
+        GPIO_InitStructure.GPIO_Pin = GPIO_Pin_6 | GPIO_Pin_7;         
+..\Source\APP\encode.c(14): error:  #20: identifier "GPIO_Mode_IPU" is undefined
+        GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
+..\Source\APP\encode.c(15): error:  #20: identifier "GPIO_Speed_50MHz" is undefined
+        GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+..\Source\APP\encode.c(16): warning:  #223-D: function "GPIO_Init" declared implicitly
+        GPIO_Init(GPIOB, &GPIO_InitStructure);                           
+..\Source\APP\encode.c(19): warning:  #223-D: function "TIM_DeInit" declared implicitly
+        TIM_DeInit(TIM4);
+..\Source\APP\encode.c(22): error:  #20: identifier "TIM_CKD_DIV1" is undefined
+        TIM_TimeBaseStructure.TIM_ClockDivision =TIM_CKD_DIV1 ;
+..\Source\APP\encode.c(23): error:  #20: identifier "TIM_CounterMode_Up" is undefined
+        TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;
+..\Source\APP\encode.c(24): warning:  #223-D: function "TIM_TimeBaseInit" declared implicitly
+        TIM_TimeBaseInit(TIM4, &TIM_TimeBaseStructure);              
+..\Source\APP\encode.c(26): warning:  #223-D: function "TIM_EncoderInterfaceConfig" declared implicitly
+        TIM_EncoderInterfaceConfig(TIM4, TIM_EncoderMode_TI1, TIM_ICPolarity_Rising ,TIM_ICPolarity_Rising);    //≈‰÷√±‡¬Î∆˜ƒ£ Ω¥•∑¢‘¥∫Õº´–‘
+..\Source\APP\encode.c(26): error:  #20: identifier "TIM_EncoderMode_TI1" is undefined
+        TIM_EncoderInterfaceConfig(TIM4, TIM_EncoderMode_TI1, TIM_ICPolarity_Rising ,TIM_ICPolarity_Rising);    //≈‰÷√±‡¬Î∆˜ƒ£ Ω¥•∑¢‘¥∫Õº´–‘
+..\Source\APP\encode.c(26): error:  #20: identifier "TIM_ICPolarity_Rising" is undefined
+        TIM_EncoderInterfaceConfig(TIM4, TIM_EncoderMode_TI1, TIM_ICPolarity_Rising ,TIM_ICPolarity_Rising);    //≈‰÷√±‡¬Î∆˜ƒ£ Ω¥•∑¢‘¥∫Õº´–‘
+..\Source\APP\encode.c(28): warning:  #223-D: function "TIM_ICStructInit" declared implicitly
+        TIM_ICStructInit(&TIM_ICInitStructure);                                                                                                                                                                                                                                                                         //≈‰÷√¬À≤®∆˜
+..\Source\APP\encode.c(30): warning:  #223-D: function "TIM_ICInit" declared implicitly
+        TIM_ICInit(TIM4, &TIM_ICInitStructure);
+..\Source\APP\encode.c(34): warning:  #223-D: function "TIM_Cmd" declared implicitly
+        TIM_Cmd(TIM4, ENABLE);   //∆Ù∂ØTIM4∂® ±∆˜
+..\Source\APP\encode.c: 9 warnings, 13 errors
+compiling delay.c...
+..\Source\Drive\delay.c(34): warning:  #68-D: integer conversion resulted in a change of sign
+    NVIC_InitStructure.NVIC_IRQChannel = SysTick_IRQn;
+..\Source\Drive\delay.c: 1 warning, 0 errors
+compiling IOI2C.c...
+compiling UART1.c...
+compiling UART2.c...
+..\Source\Drive\UART2.c(79): warning:  #1-D: last line of file ends without a newline
+  }
+..\Source\Drive\UART2.c: 1 warning, 0 errors
+compiling DIO.c...
+compiling Queue.c...
+..\Source\Public\stdint.h(12): warning:  #47-D: incompatible redefinition of macro "__ARMCLIB_VERSION" (declared at line 22 of "C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h")
+  #define __ARMCLIB_VERSION 5030076
+..\Source\Public\Queue.c: 1 warning, 0 errors
+compiling system_stm32f10x.c...
+compiling misc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_it.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_i2c.c...
+assembling startup_stm32f10x_hd.s...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_bkp.c...
+compiling hw_config.c...
+compiling usb_desc.c...
+compiling usb_endp.c...
+compiling usb_istr.c...
+compiling usb_it.c...
+compiling usb_prop.c...
+compiling usb_pwr.c...
+compiling usb_core.c...
+compiling usb_init.c...
+compiling usb_int.c...
+compiling usb_mem.c...
+compiling usb_regs.c...
+compiling usb_sil.c...
+compiling encode.c...
+..\..\..\..\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\HARDWARE\encode.c(5): error:  #20: identifier "GPIO_InitTypeDef" is undefined
+        GPIO_InitTypeDef GPIO_InitStructure;
+..\..\..\..\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\HARDWARE\encode.c(6): error:  #20: identifier "TIM_TimeBaseInitTypeDef" is undefined
+        TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
+..\..\..\..\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\HARDWARE\encode.c(7): error:  #20: identifier "TIM_ICInitTypeDef" is undefined
+        TIM_ICInitTypeDef TIM_ICInitStructure;          
+..\..\..\..\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\HARDWARE\encode.c(9): warning:  #223-D: function "RCC_APB1PeriphClockCmd" declared implicitly
+        RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
+..\..\..\..\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\HARDWARE\encode.c(9): error:  #20: identifier "RCC_APB1Periph_TIM4" is undefined
+        RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
+..\..\..\..\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\HARDWARE\encode.c(10): warning:  #223-D: function "RCC_APB2PeriphClockCmd" declared implicitly
+        RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
+..\..\..\..\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\HARDWARE\encode.c(10): error:  #20: identifier "RCC_APB2Periph_GPIOB" is undefined
+        RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
+..\..\..\..\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\HARDWARE\encode.c(13): error:  #20: identifier "GPIO_Pin_6" is undefined
+        GPIO_InitStructure.GPIO_Pin = GPIO_Pin_6 | GPIO_Pin_7;         
+..\..\..\..\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\HARDWARE\encode.c(13): error:  #20: identifier "GPIO_Pin_7" is undefined
+        GPIO_InitStructure.GPIO_Pin = GPIO_Pin_6 | GPIO_Pin_7;         
+..\..\..\..\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\HARDWARE\encode.c(14): error:  #20: identifier "GPIO_Mode_IPU" is undefined
+        GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
+..\..\..\..\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\HARDWARE\encode.c(15): error:  #20: identifier "GPIO_Speed_50MHz" is undefined
+        GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+..\..\..\..\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\HARDWARE\encode.c(16): warning:  #223-D: function "GPIO_Init" declared implicitly
+        GPIO_Init(GPIOB, &GPIO_InitStructure);                           
+..\..\..\..\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\HARDWARE\encode.c(19): warning:  #223-D: function "TIM_DeInit" declared implicitly
+        TIM_DeInit(TIM4);
+..\..\..\..\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\HARDWARE\encode.c(22): error:  #20: identifier "TIM_CKD_DIV1" is undefined
+        TIM_TimeBaseStructure.TIM_ClockDivision =TIM_CKD_DIV1 ;
+..\..\..\..\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\HARDWARE\encode.c(23): error:  #20: identifier "TIM_CounterMode_Up" is undefined
+        TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;
+..\..\..\..\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\HARDWARE\encode.c(24): warning:  #223-D: function "TIM_TimeBaseInit" declared implicitly
+        TIM_TimeBaseInit(TIM4, &TIM_TimeBaseStructure);              
+..\..\..\..\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\HARDWARE\encode.c(26): warning:  #223-D: function "TIM_EncoderInterfaceConfig" declared implicitly
+        TIM_EncoderInterfaceConfig(TIM4, TIM_EncoderMode_TI1, TIM_ICPolarity_Rising ,TIM_ICPolarity_Rising);    //≈‰÷√±‡¬Î∆˜ƒ£ Ω¥•∑¢‘¥∫Õº´–‘
+..\..\..\..\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\HARDWARE\encode.c(26): error:  #20: identifier "TIM_EncoderMode_TI1" is undefined
+        TIM_EncoderInterfaceConfig(TIM4, TIM_EncoderMode_TI1, TIM_ICPolarity_Rising ,TIM_ICPolarity_Rising);    //≈‰÷√±‡¬Î∆˜ƒ£ Ω¥•∑¢‘¥∫Õº´–‘
+..\..\..\..\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\HARDWARE\encode.c(26): error:  #20: identifier "TIM_ICPolarity_Rising" is undefined
+        TIM_EncoderInterfaceConfig(TIM4, TIM_EncoderMode_TI1, TIM_ICPolarity_Rising ,TIM_ICPolarity_Rising);    //≈‰÷√±‡¬Î∆˜ƒ£ Ω¥•∑¢‘¥∫Õº´–‘
+..\..\..\..\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\HARDWARE\encode.c(28): warning:  #223-D: function "TIM_ICStructInit" declared implicitly
+        TIM_ICStructInit(&TIM_ICInitStructure);                                                                                                                                                                                                                                                                         //≈‰÷√¬À≤®∆˜
+..\..\..\..\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\HARDWARE\encode.c(30): warning:  #223-D: function "TIM_ICInit" declared implicitly
+        TIM_ICInit(TIM4, &TIM_ICInitStructure);
+..\..\..\..\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\HARDWARE\encode.c(34): warning:  #223-D: function "TIM_Cmd" declared implicitly
+        TIM_Cmd(TIM4, ENABLE);   //∆Ù∂ØTIM4∂® ±∆˜
+..\..\..\..\STM32’˝Ωª±‡¬Î∆˜\STM32’˝Ωª±‡¬Î∆˜\HARDWARE\encode.c: 9 warnings, 13 errors
+compiling lcd.c...
+..\..\..\..\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\STM32Ê≠£‰∫§ÁºñÁ†ÅÂô®\HARDWARE\lcd.c(2): error:  #5: cannot open source input file "font.h": No such file or directory
+  #include "font.h"
+..\..\..\..\STM32’˝Ωª±‡¬Î∆˜\STM32’˝Ωª±‡¬Î∆˜\HARDWARE\lcd.c: 0 warnings, 1 error
+".\Obj\Project.axf" - 27 Error(s), 24 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.2.0.pack
+                ARM::CMSIS:CORE:3.40.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 3.40.0
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\Lenovo\Desktop\AUST_»´≥°∂®Œª\gh_»´≥°∂®Œª\◊Ó÷’∞Ê≥Ã–Ú\AUST_»´≥°∂®Œª\MDK\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.40.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+Target not created.
+</pre>
+</body>
+</html>
